@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { GiftHomeComponent } from './gift-home/gift-home.component';
 import { TabsComponent } from './tabs/tabs.component';
 import { FormsModule } from '@angular/forms';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { FormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     FormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

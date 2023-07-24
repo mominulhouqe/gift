@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./tabs.component.css']
 })
 export class TabsComponent {
-  categories = ['All', 'Appointment', 'Latto'];
+  categories = ['All', 'Tool Gift', 'Multi','Activity','Family Battle','VIP'];
   selectedCategory = 'All';
 
   giftsAll = [
@@ -17,19 +17,19 @@ export class TabsComponent {
     { id: 5, name: 'Jumping Gift', imageUrl: 'path_to_image_5', category: 'VIP', value: '15' },
     { id: 6, name: 'Adventure Gear', imageUrl: 'path_to_image_6', category: 'Adventure', value: '25' },
 { id: 7, name: 'Camping Essentials', imageUrl: 'path_to_image_7', category: 'Outdoor', value: '40' },
-{ id: 8, name: 'Game Night Set', imageUrl: 'path_to_image_8', category: 'Entertainment', value: '35' },
+{ id: 8, name: 'Game Night Set', imageUrl: 'path_to_image_8', category: 'Tool Gift', value: '35' },
 { id: 9, name: 'Gourmet Cooking Kit', imageUrl: 'path_to_image_9', category: 'Food & Drink', value: '60' },
 { id: 10, name: 'Fitness Tracker', imageUrl: 'path_to_image_10', category: 'Health & Fitness', value: '70' },
 { id: 11, name: 'Art Supplies', imageUrl: 'path_to_image_11', category: 'Arts & Crafts', value: '20' },
-{ id: 12, name: 'Self-care Package', imageUrl: 'path_to_image_12', category: 'Wellness', value: '25' },
-{ id: 13, name: 'Tech Gadgets', imageUrl: 'path_to_image_13', category: 'Electronics', value: '55' },
-{ id: 14, name: 'Pet Accessories', imageUrl: 'path_to_image_14', category: 'Pets', value: '15' },
-{ id: 15, name: 'Books Bundle', imageUrl: 'path_to_image_15', category: 'Education', value: '30' },
-{ id: 16, name: 'Music Instrument', imageUrl: 'path_to_image_16', category: 'Hobby', value: '45' },
-{ id: 17, name: 'Travel Essentials', imageUrl: 'path_to_image_17', category: 'Travel', value: '50' },
+{ id: 12, name: 'Self-care Package', imageUrl: 'path_to_image_12', category: 'VIP', value: '25' },
+{ id: 13, name: 'Tech Gadgets', imageUrl: 'path_to_image_13', category: 'Multi', value: '55' },
+{ id: 14, name: 'Pet Accessories', imageUrl: 'path_to_image_14', category: 'Activity', value: '15' },
+{ id: 15, name: 'Books Bundle', imageUrl: 'path_to_image_15', category: 'Tool Gift', value: '30' },
+{ id: 16, name: 'Music Instrument', imageUrl: 'path_to_image_16', category: 'Family Battle', value: '45' },
+{ id: 17, name: 'Travel Essentials', imageUrl: 'path_to_image_17', category: 'VIP', value: '50' },
 { id: 18, name: 'Plant Collection', imageUrl: 'path_to_image_18', category: 'Home & Garden', value: '20' },
 { id: 19, name: 'DIY Kit', imageUrl: 'path_to_image_19', category: 'Crafting', value: '25' },
-{ id: 20, name: 'Gourmet Coffee Set', imageUrl: 'path_to_image_20', category: 'Food & Drink', value: '40' },
+{ id: 20, name: 'Gourmet Coffee Set', imageUrl: 'path_to_image_20', category: 'Activity', value: '40' },
 
 
     // Add more gifts for different categories
