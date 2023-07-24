@@ -1,23 +1,42 @@
 <div class="container mt-4">
-  <h3>Gift List</h3>
-  <div class="input-group mb-3">
-    <input type="text" class="form-control" [(ngModel)]="newGift" placeholder="Enter new gift...">
-    <div class="input-group-append">
-      <button class="btn btn-primary" type="button" (click)="addGift()">Add</button>
+
+  <p routerLink="/" class="btn mb-4 "><i class="fa fa-backward" aria-hidden="true"></i> Gift List</p>
+
+
+
+  <div class="row ">
+    <div class="col-8">
+
+      <h3>Add new category </h3>
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" [(ngModel)]="newGift" placeholder="Category name...">
+      </div>
+      <div class="input-group-append d-flex justify-content-end">
+        <button class="btn btn-dark" type="button" (click)="addGift()">Add</button>
+      </div>
+
+    </div>
+
+    <div class="col-4 border p-2 rounded-2">
+      <div class=" ">
+        <h4>All category (4)</h4>
+        <p class=" d-flex justify-content-between mb-4 showdeleted" *ngFor="let gift of gifts">
+          {{ gift.name }}
+          <button class="btn btn-danger  btn-sm float-right" (click)="deleteGift(gift)"><i class="fa fa-remove " aria-hidden="true"></i> </button>
+        </p>
+      </div>
+
+      <div #toast class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-autohide="true">
+        <div class="toast-body">
+          Gift deleted!
+        </div>
+      </div>
+
     </div>
   </div>
 
-  <ul class="list-group">
-    <li class="list-group-item" *ngFor="let gift of gifts">
-      {{ gift.name }}
-      <button class="btn btn-danger btn-sm float-right" (click)="deleteGift(gift)">Delete</button>
-    </li>
-  </ul>
 
-  <div #toast class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-autohide="true">
-    <div class="toast-body">
-      Gift deleted!
-    </div>
-  </div>
-  
+
+
+
 </div>

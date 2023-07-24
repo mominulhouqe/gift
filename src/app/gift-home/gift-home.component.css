@@ -4,6 +4,7 @@
     top: 10px;
     right: 10px;
     min-width: 200px;
+    
   }
   
   /* Show the toast message */
@@ -16,3 +17,4 @@
     opacity: 0;
   }
   
+ 
