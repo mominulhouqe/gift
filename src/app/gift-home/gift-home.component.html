@@ -1,0 +1,23 @@
+<div class="container mt-4">
+  <h3>Gift List</h3>
+  <div class="input-group mb-3">
+    <input type="text" class="form-control" [(ngModel)]="newGift" placeholder="Enter new gift...">
+    <div class="input-group-append">
+      <button class="btn btn-primary" type="button" (click)="addGift()">Add</button>
+    </div>
+  </div>
+
+  <ul class="list-group">
+    <li class="list-group-item" *ngFor="let gift of gifts">
+      {{ gift.name }}
+      <button class="btn btn-danger btn-sm float-right" (click)="deleteGift(gift)">Delete</button>
+    </li>
+  </ul>
+
+  <div #toast class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-autohide="true">
+    <div class="toast-body">
+      Gift deleted!
+    </div>
+  </div>
+  
+</div>

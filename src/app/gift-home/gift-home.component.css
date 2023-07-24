@@ -1,0 +1,18 @@
+/* Styles for the toast message */
+.toast {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    min-width: 200px;
+  }
+  
+  /* Show the toast message */
+  .toast.show {
+    opacity: 1;
+  }
+  
+  /* Hide the toast message */
+  .toast:not(.show) {
+    opacity: 0;
+  }
+  
